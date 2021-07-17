@@ -1,0 +1,112 @@
+body{
+    background-color: #fc3;
+    color: #333;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Helvetica, Arial,  sans-serif;
+}
+
+h2{
+    font-size: 30px;
+    font-family: Georgia, Times, serif;
+}
+
+p{
+    font-size: 18px;
+    font-style: italic;
+    
+}
+
+ol{
+    margin: 20px;
+    padding: 20px;
+    color: white
+}
+
+/* Syntax for using id for CSS
+
+part of the webpage # id {
+    background-color: white
+}
+
+
+*/
+
+/*Below is additional styles from lecture 73*/
+
+body#idClassPage{
+    background-color: white;
+}
+
+h1#main-title{
+    color: #fc3;
+    background: #353535;
+    padding: 10px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.sectionHeader{
+    color:olive;
+    border: solid 1px pink;
+    padding: 40px 20px 10px;
+    text-align: center;
+    font-size: 1.2m;
+    font-weight: normal;
+}
+
+
+
+
+/*Styles for Descendant selector from lecture 74*/
+
+.primary-box{
+    background-color: white;
+    border: solid 10px #333;
+    padding: 20px;
+}
+
+.secondary-box{
+    background-color: #333;
+    color:#ffffff  ;
+    padding: 10px;
+}
+
+/*Now comes the descendant selector*/
+.secondary-box p{
+    font-size: 14px;
+    font-style: normal
+}
+
+.secondary-box p em{
+    color:#fc3;
+}
+
+
+/*Styles for groupings selector lecture 75*/
+
+.primary-box, .secondary-box {
+    margin: 30px 20px ;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    border-bottom: solid 3px red;
+    padding: 0 0 10px;
+}
+
+.inside-box{
+    border:solid 1px black;
+}
+
+
+
+
+/*For setting a standard width we will edit the outermost div tag i.e. the one with the id mainContaine*/
+
+#mainContainer{
+    width: 960px;
+    margin: 0 auto;
+}
